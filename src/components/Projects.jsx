@@ -13,7 +13,7 @@ function Tags({ tags }) {
 
 export default function Projects() {
   return (
-    <section id="projects">
+    <section id="projects" className="alt">
       <div className="wrap">
         <Reveal className="section-head">
           <p className="eyebrow">Projects</p>

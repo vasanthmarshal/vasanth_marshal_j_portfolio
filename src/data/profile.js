@@ -14,41 +14,24 @@ export const profile = {
 };
 
 export const navLinks = [
-  ['About', '#about'],
   ['Skills', '#skills'],
   ['AI Engineering', '#ai'],
   ['Experience', '#experience'],
-  ['Projects', '#projects'],
   ['Recognition', '#recognition'],
+  ['Projects', '#projects'],
   ['Contact', '#contact'],
-];
-
-export const stats = [
-  ['2.5+', 'Years building enterprise apps'],
-  ['2', 'Promotions since joining as an intern'],
-  ['90%', 'Less effort creating & maintaining Braze campaigns'],
-  ['30%', 'Faster developer & QA testing cycles'],
-  ['½ day', 'Saved per release by an AI verification agent'],
-];
-
-export const aboutPills = [
-  ['Backend & Integrations', 'Node.js · REST · Webhooks · JPMorgan Chase · Braze · Contentful'],
-  ['Performance', 'Redis caching · Single Flight pattern · Query optimization'],
-  ['GenAI Engineering', 'Claude Code · MCP · AI Agents · Prompt & Context Engineering'],
-  ['Ownership', 'ERDs · Production support · Root-cause analysis · Hotfix releases'],
 ];
 
 // [label, sub-label, devicon path | null, badge text when there is no logo]
 export const skills = {
-  'AI Engineering': [
-    ['Claude Code', 'Agentic coding', null, 'CC'],
-    ['MCP', 'Model Context Protocol', null, 'MCP'],
-    ['Cursor', 'AI IDE', 'cursor/cursor-original'],
-    ['GitHub Copilot', 'AI pair programmer', 'githubcopilot/githubcopilot-original', 'GC'],
-    ['Prompt Engineering', 'Prompting', null, 'PE'],
-    ['Context Engineering', 'Agent context', null, 'CE'],
-    ['AI Agents', 'Skills · Hooks · Commands', null, 'AI'],
-    ['CLAUDE.md', 'Cursor Rules', null, 'MD'],
+  'Backend & Languages': [
+    ['JavaScript', 'Language', 'javascript/javascript-original'],
+    ['TypeScript', 'Language', 'typescript/typescript-original'],
+    ['C++', 'Language', 'cplusplus/cplusplus-original'],
+    ['Node.js', 'Runtime', 'nodejs/nodejs-original'],
+    ['Express.js', 'Web framework', 'express/express-original'],
+    ['REST APIs', 'Design & integration', null, 'API'],
+    ['JWT Auth', 'Authentication', null, 'JWT'],
   ],
   Frontend: [
     ['React.js', 'UI library', 'react/react-original'],
@@ -60,14 +43,15 @@ export const skills = {
     ['HTML5', 'Markup', 'html5/html5-original'],
     ['CSS3', 'Styling', 'css3/css3-original'],
   ],
-  'Backend & Languages': [
-    ['JavaScript', 'Language', 'javascript/javascript-original'],
-    ['TypeScript', 'Language', 'typescript/typescript-original'],
-    ['C++', 'Language', 'cplusplus/cplusplus-original'],
-    ['Node.js', 'Runtime', 'nodejs/nodejs-original'],
-    ['Express.js', 'Web framework', 'express/express-original'],
-    ['REST APIs', 'Design & integration', null, 'API'],
-    ['JWT Auth', 'Authentication', null, 'JWT'],
+  'AI Engineering': [
+    ['Claude Code', 'Agentic coding', '/assets/icons/claude-code.svg', 'CC'],
+    ['Cursor', 'AI IDE', '/assets/icons/cursor.svg', 'CU'],
+    ['GitHub Copilot', 'AI pair programmer', '/assets/icons/github-copilot.svg', 'GC'],
+    ['MCP', 'Model Context Protocol', '/assets/icons/mcp.svg', 'MCP'],
+    ['Prompt Engineering', 'Prompting', null, 'PE'],
+    ['Context Engineering', 'Agent context', null, 'CE'],
+    ['AI Agents', 'Skills · Hooks · Commands', null, 'AI'],
+    ['CLAUDE.md', 'Cursor Rules', '/assets/icons/claude.svg', 'MD'],
   ],
   'Data & Cloud': [
     ['PostgreSQL', 'Database', 'postgresql/postgresql-original'],
@@ -89,11 +73,11 @@ export const skills = {
     ['Bitbucket', 'Collaboration', 'bitbucket/bitbucket-original'],
     ['Jira', 'Agile tracking', 'jira/jira-original'],
     ['Slack', 'Collaboration', 'slack/slack-original'],
-    ['Contentful', 'CMS', null, 'CF'],
-    ['Braze', 'Customer engagement', null, 'BZ'],
-    ['DocuSign', 'E-signature', null, 'DS'],
-    ['Adobe Acrobat', 'Documents', null, 'AA'],
-    ['Acquia DXP', 'Digital experience', null, 'AQ'],
+    ['Contentful', 'CMS', '/assets/icons/contentful.svg', 'CF'],
+    ['Braze', 'Customer engagement', '/assets/icons/braze.png', 'BZ'],
+    ['DocuSign', 'E-signature', '/assets/icons/docusign.png', 'DS'],
+    ['Adobe Acrobat', 'Documents', '/assets/icons/adobe-acrobat.svg', 'AA'],
+    ['Acquia DXP', 'Digital experience', '/assets/icons/acquia.png', 'AQ'],
   ],
 };
 
@@ -142,6 +126,7 @@ export const jobBullets = [
   'Integrated enterprise platforms including JPMorgan Chase, Braze, Contentful, Acertus, RunBuggy, Slack APIs and Provider Exchange Network.',
   'Worked with AWS S3, SQS, SNS, SES, Lambda, ElastiCache and Secrets Manager.',
   'Improved performance with Redis caching, the Single Flight pattern, optimized queries and API enhancements.',
+  'Managed production support by analyzing incidents using New Relic, assessing severity, performing root cause analysis (RCA), and coordinating hotfixes to resolve production issues.',
 ];
 
 export const education = {

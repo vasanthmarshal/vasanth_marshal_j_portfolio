@@ -49,13 +49,12 @@ vasanth-portfolio/
     │   └── profile.js      ALL the content: text, skills, projects, awards, certs
     └── components/
         ├── Header.jsx          Sticky nav + mobile menu
-        ├── Hero.jsx            Hero section with photo, plus key-numbers strip
-        ├── About.jsx           About me
+        ├── Hero.jsx            Hero / intro section with photo
         ├── Skills.jsx          Tabbed skills grid with tech logos
         ├── AIEngineering.jsx   Claude / MCP / AI agent work
         ├── Experience.jsx      Role timeline, bullets, education
-        ├── Projects.jsx        Featured and other projects
         ├── Recognition.jsx     Awards and certifications
+        ├── Projects.jsx        Featured and other projects
         ├── Contact.jsx         Email / phone / LinkedIn
         ├── Footer.jsx
         └── Reveal.jsx          Fade-in-on-scroll wrapper
@@ -66,7 +65,7 @@ vasanth-portfolio/
 - **Text, skills, projects, awards, certifications, contact details:** edit `src/data/profile.js`.
 - **Resume:** replace `public/assets/VasanthMarshalJ_Resume.pdf` (keep the same file name).
 - **Colours:** change the variables at the top of `src/styles.css` (`--accent`, `--accent-2`, `--bg`, ...).
-- **About and hero paragraphs:** edit `src/components/About.jsx` and `src/components/Hero.jsx`.
+- **Intro heading and paragraph:** edit `src/components/Hero.jsx`.
 - **GitHub link:** add a `github` field in `profile.js` and a link in `Hero.jsx` / `Contact.jsx`.
 
 ## Deploy to Netlify

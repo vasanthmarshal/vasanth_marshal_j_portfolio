@@ -94,22 +94,6 @@ h3 { font-size: 1.15rem; letter-spacing: -.01em; line-height: 1.3; }
 .float-chip { background: rgba(14, 17, 27, .88); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid #2a3150; border-radius: 12px; padding: 9px 13px; font-size: .75rem; color: var(--muted); line-height: 1.3; box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .7); }
 .float-chip b { display: block; color: var(--accent); font: 700 .8rem 'JetBrains Mono', monospace; }
 
-/* Stats */
-.stats { padding: 0; border-block: 1px solid var(--line); background: var(--bg-alt); }
-.stats-grid { display: grid; grid-template-columns: repeat(5, 1fr); }
-.stat { padding: 30px 20px; border-right: 1px solid var(--line); }
-.stat:first-child { padding-left: 0; }
-.stat:last-child { border-right: 0; }
-.stat strong { display: block; font-size: 2rem; letter-spacing: -.04em; line-height: 1; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
-.stat span { display: block; margin-top: 8px; font-size: .82rem; color: var(--muted); line-height: 1.4; }
-
-/* About */
-.about-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 56px; align-items: start; }
-.about-copy p { margin: 0 0 16px; color: #c3cadb; }
-.pill-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 26px; }
-.pill { border: 1px solid var(--line); background: linear-gradient(145deg, var(--panel-2), var(--panel)); padding: 16px; border-radius: 12px; }
-.pill strong { display: block; font-size: .95rem; margin-bottom: 4px; }
-.pill small { color: var(--muted); font-size: .8rem; line-height: 1.5; display: block; }
 
 /* Skills */
 .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 26px; }
@@ -208,11 +192,7 @@ footer { padding: 28px 0; border-top: 1px solid var(--line); color: var(--muted)
   .hero.has-photo::after { background: linear-gradient(0deg, var(--bg) 0%, rgba(6, 7, 12, .9) 38%, rgba(6, 7, 12, 0) 85%); }
   .hero-copy { padding: 320px 0 56px; }
   .hero-badges { display: none; }
-  .about-grid { grid-template-columns: 1fr; gap: 24px; }
-  .stats-grid { grid-template-columns: repeat(3, 1fr); }
-  .stat { border-bottom: 1px solid var(--line); padding-left: 20px !important; }
-  .stat:nth-child(3n) { border-right: 0; }
-  .ai-grid, .project-grid, .award-grid { grid-template-columns: 1fr; }
+    .ai-grid, .project-grid, .award-grid { grid-template-columns: 1fr; }
   .bullets.two-col { grid-template-columns: 1fr; }
   .cert-grid { grid-template-columns: 1fr; }
   .contact-box { flex-direction: column; padding: 32px 24px; }
@@ -231,11 +211,7 @@ footer { padding: 28px 0; border-top: 1px solid var(--line); color: var(--muted)
 @media (max-width: 560px) {
   section { padding: 68px 0; }
   .hero-copy { padding-top: 280px; }
-  .stats-grid { grid-template-columns: repeat(2, 1fr); }
-  .stat:nth-child(3n) { border-right: 1px solid var(--line); }
-  .stat:nth-child(2n) { border-right: 0; }
-  .pill-grid { grid-template-columns: 1fr; }
-  .career { grid-template-columns: 1fr; gap: 18px; }
+    .career { grid-template-columns: 1fr; gap: 18px; }
   .career::before { display: none; }
   .career li { padding: 0 0 0 28px; }
   .career-dot { top: 5px; }

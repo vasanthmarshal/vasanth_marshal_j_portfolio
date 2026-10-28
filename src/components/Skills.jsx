@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Reveal from './Reveal.jsx';
 import { skills } from '../data/profile.js';
 
-const ICON = (path) => `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${path}.svg`;
+const ICON = (path) => (path.startsWith('/') ? path : `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${path}.svg`);
 
 function SkillIcon({ name, icon, badge }) {
   const [failed, setFailed] = useState(false);

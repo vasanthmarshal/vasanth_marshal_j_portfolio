@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { profile, stats } from '../data/profile.js';
+import { profile } from '../data/profile.js';
 
 export default function Hero() {
   const [photoOk, setPhotoOk] = useState(true);
@@ -22,13 +22,13 @@ export default function Hero() {
             <h1>
               Hi, I'm <span className="grad">{profile.name}.</span>
             </h1>
-            <p className="lead">
-              I build enterprise-scale full-stack products and use AI agents to ship them faster and cleaner.
-            </p>
+            <p className="lead">Full-stack engineer leveraging AI to build smarter software.</p>
             <p className="muted">
-              2.5+ years across Node.js, Vue.js, React, PostgreSQL, Redis and AWS — plus hands-on Claude Code, MCP
-              servers and reusable AI development workflows. Certified by Anthropic as a Claude Architect and Claude
-              Developer.
+              Senior Software Engineer with 2.5+ years of experience building enterprise-scale full-stack applications
+              with Node.js, Vue.js, React.js, PostgreSQL, Redis and AWS. I integrate enterprise platforms, optimize
+              backend systems, and use AI-assisted development — Claude Code, Cursor, GitHub Copilot, prompt
+              engineering and the Model Context Protocol (MCP) — to accelerate delivery and boost developer
+              productivity. Certified by Anthropic as a Claude Architect and Claude Developer.
             </p>
             <div className="hero-actions">
               <a className="btn btn-primary" href="#experience">
@@ -51,17 +51,6 @@ export default function Hero() {
             <div className="float-chip"><b>CCDV-F</b> Claude Certified Developer</div>
           </div>
         )}
-      </section>
-
-      <section className="stats" aria-label="Key numbers">
-        <div className="wrap stats-grid">
-          {stats.map(([value, label]) => (
-            <div className="stat" key={label}>
-              <strong>{value}</strong>
-              <span>{label}</span>
-            </div>
-          ))}
-        </div>
       </section>
     </>
   );

@@ -3,7 +3,7 @@ import { awards, certs } from '../data/profile.js';
 
 export default function Recognition() {
   return (
-    <section id="recognition" className="alt">
+    <section id="recognition">
       <div className="wrap">
         <Reveal className="section-head">
           <p className="eyebrow">Recognition &amp; Certifications</p>
